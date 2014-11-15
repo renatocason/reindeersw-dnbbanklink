@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <ReindeerSw_DnbBanklink>
+            <active>true</active>
+            <codePool>community</codePool>
+        </ReindeerSw_DnbBanklink>
+    </modules>
+</config>

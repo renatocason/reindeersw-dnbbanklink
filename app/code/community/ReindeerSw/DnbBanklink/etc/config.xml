@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * @copyright Copyright (c) 2014 Reindeer Software (http://reindeersw.com)
+ */
+-->
+<config>
+    <modules>
+        <ReindeerSw_DnbBanklink>
+            <version>0.1.0.0</version>
+        </ReindeerSw_DnbBanklink>
+    </modules>
+    <global>
+        <models>
+            <reindeersw_dnbbanklink>
+                <class>ReindeerSw_DnbBanklink_Model</class>
+            </reindeersw_dnbbanklink>
+        </models>
+        <helpers>
+            <reindeersw_dnbbanklink>
+                <class>ReindeerSw_DnbBanklink_Helper</class>
+            </reindeersw_dnbbanklink>
+        </helpers>
+        <blocks>
+            <reindeersw_dnbbanklink>
+                <class>ReindeerSw_DnbBanklink_Block</class>
+            </reindeersw_dnbbanklink>
+        </blocks>
+    </global>
+    <default>
+        <payment>
+            <reindeersw_dnbbanklink>
+                <model>reindeersw_dnbbanklink/standard</model>
+                <active>0</active>
+                <test_mode>0</test_mode>
+                <payment_action>sale</payment_action>
+                <title>DNB Banklink</title>
+                <submit_url>https://www.i-linija.lt/loginB2B.aspx</submit_url>
+                <vk_snd_id></vk_snd_id>
+                <vk_acc></vk_acc>
+                <vk_pank>40100</vk_pank>
+                <vk_name></vk_name>
+                <allowspecific>0</allowspecific>
+                <sort_order>1</sort_order>
+            </reindeersw_dnbbanklink>
+        </payment>
+    </default>
+    <frontend>
+        <routers>
+            <reindeersw_dnbbanklink>
+                <use>standard</use>
+                <args>
+                    <module>ReindeerSw_DnbBanklink</module>
+                    <frontName>dnbbanklink</frontName>
+                </args>
+            </reindeersw_dnbbanklink>
+        </routers>
+    </frontend>
+</config>
